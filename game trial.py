@@ -1,11 +1,10 @@
-game = 'i want to play a game'
-print(id(game))
+game = "this is a game"
+print(game,id(game))
 
 def game_board():
-    game = "A game"
-    print(id(game))
-    return game
+    global game
+    game = ("A game")
 
-game = game_board()
+game_board()
 print(game)
 print(id(game))
